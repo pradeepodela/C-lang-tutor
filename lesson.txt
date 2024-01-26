@@ -1,0 +1,92 @@
+Learning C Language
+Introduction
+Welcome to the README file for learning the C programming language. This document serves as a guide to understanding the basics of C programming and provides examples to help you grasp fundamental concepts.
+
+Getting Started
+C is a powerful programming language widely used for system and application software development. Before diving into coding, it's essential to understand the basic syntax, data types, control structures, functions, and pointers in C.
+
+Topics Covered:
+Variables and Data Types:
+
+In C, variables are used to store data. Data types specify the type of data that a variable can hold, such as integers, floating-point numbers, characters, etc.
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    float pi = 3.14;
+    char letter = 'A';
+    
+    printf("Integer: %d\n", num);
+    printf("Float: %f\n", pi);
+    printf("Character: %c\n", letter);
+    
+    return 0;
+}
+Control Structures:
+
+Control structures like if-else, switch-case, and loops (for, while, do-while) are used to control the flow of a program.
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    
+    if (num > 0) {
+        printf("Positive number\n");
+    } else {
+        printf("Negative number\n");
+    }
+    
+    return 0;
+}
+Functions:
+
+Functions in C allow code reuse and better organization. They help break down complex tasks into smaller, manageable units.
+c
+Copy code
+#include <stdio.h>
+
+// Function declaration
+int add(int a, int b);
+
+int main() {
+    int num1 = 5, num2 = 3;
+    int sum;
+    
+    // Function call
+    sum = add(num1, num2);
+    
+    printf("Sum: %d\n", sum);
+    
+    return 0;
+}
+
+// Function definition
+int add(int a, int b) {
+    return a + b;
+}
+Pointers:
+
+Pointers are variables that store memory addresses. They are widely used in C for dynamic memory allocation and efficient memory management.
+c
+Copy code
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+    int *ptr;
+    
+    ptr = &num; // Assigning address of num to pointer ptr
+    
+    printf("Value of num: %d\n", num);
+    printf("Address of num: %p\n", &num);
+    printf("Value pointed by ptr: %d\n", *ptr);
+    printf("Address stored in ptr: %p\n", ptr);
+    
+    return 0;
+}
+Conclusion
+This README provides a brief overview of essential topics in C programming. To deepen your understanding, explore more complex concepts, algorithms, and data structures in C. Happy coding!
